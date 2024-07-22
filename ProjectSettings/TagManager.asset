@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Backgroud
+    uniqueID: 1502450663
+    locked: 0
+  - name: Infra
+    uniqueID: 26590363
+    locked: 0
+  - name: Player
+    uniqueID: 3579524425
+    locked: 0
