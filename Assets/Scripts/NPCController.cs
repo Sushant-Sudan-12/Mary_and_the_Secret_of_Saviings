@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-public class NPCController : Interactable
+public class NPCController : MonoBehaviour, Interactable
 {
+    [SerializeField] Dialog dialog;
     public void Interact(){
-        Debug.Log("attack if you can");
+       StartCoroutine(DialogManager.Instance.ShowDialog(dialog));
     }
 }
 
