@@ -1,3 +1,19 @@
+I have created a small environment of a top down rpg
+
+In this there are three kind of interactions that can happen one at a time
+
+One is cutscene talking where we have to listen to the monolgue of the NPC character
+
+The other is where we are buying movie ticket its a simple yes and no
+
+The last one is the bargaining system in which we can bargain for a lower range I did not put a way to input cost insread i have put ranges as option
+
+TO INTERACT WITH A CHARCHTER GO NEAR IT AND PRESS "E"
+
+Sometimes we can instead of English a weird language Im looking into it, its a problem with the font and I will see what I can do 
+
+
+
 Im trying to make a game adaptation of a children's book called "Mary and the Secret of savings"
 
 The idea of creating this book came from the Lisbon Hub of the Global Shapers Community in 
