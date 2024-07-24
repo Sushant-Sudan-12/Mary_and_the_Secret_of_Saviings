@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - solidObjectsLayer
+  - interactable
   - 
   - 
   - 
@@ -44,7 +44,7 @@ TagManager:
   - name: Backgroud
     uniqueID: 1502450663
     locked: 0
-  - name: Infra
+  - name: Foreground
     uniqueID: 26590363
     locked: 0
   - name: Player
