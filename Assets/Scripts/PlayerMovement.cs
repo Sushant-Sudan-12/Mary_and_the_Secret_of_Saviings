@@ -41,6 +41,13 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E)){
             interact();
         }
+        var facingDir = new Vector3(anim.GetFloat("moveX"),anim.GetFloat("moveY"));
+        var interactPos = transform.position+facingDir;
+        var collider = Physics2D.OverlapCircle(interactPos,0.2f,interactableLayer);
+        if(collider == null){
+            DialogManager.Instance.dialogBox.SetActive(false);
+            ShopManager.Instance.optionBox.SetActive(false);
+        }
         
     }
 
@@ -70,6 +77,8 @@ public class PlayerMovement : MonoBehaviour
         var collider = Physics2D.OverlapCircle(interactPos,0.2f,interactableLayer);
         if(collider != null){
             collider.GetComponent<Interactable>()?.Interact();
+        }else{
+            DialogManager.Instance.dialogBox.SetActive(false);
         }
     }
 

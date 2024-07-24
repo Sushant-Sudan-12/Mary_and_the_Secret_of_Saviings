@@ -1,15 +1,11 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
-using UnityEditor.MemoryProfiler;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
-    [SerializeField] GameObject dialogBox;
+    public GameObject dialogBox;
     [SerializeField] Text dialogText;
     [SerializeField]int lettersPerSecond;
     int currentLine = 0;
@@ -32,7 +28,7 @@ public class DialogManager : MonoBehaviour
     }
     
     public void HandleUpdate(){
-        if(Input.GetKeyUp(KeyCode.E)&& !isTyping){
+        if(Input.GetKeyDown(KeyCode.E)&& !isTyping){
             ++currentLine;
             if(currentLine<dialog.Lines.Count){
                 StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
@@ -40,7 +36,6 @@ public class DialogManager : MonoBehaviour
             else{
                 dialogBox.SetActive(false);
                 onHideDialog?.Invoke();
-
             }
         }
 
