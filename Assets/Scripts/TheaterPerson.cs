@@ -8,6 +8,7 @@ public class TheaterKeeper : MonoBehaviour, Interactable
     [SerializeField] GameObject dialogBox;
     [SerializeField] GameObject optionBox;
     [SerializeField] GameObject priceBox;
+    public TheaterKeeper theaterManager;
     private int i =0;
     
 
@@ -23,7 +24,7 @@ public class TheaterKeeper : MonoBehaviour, Interactable
 
     private void OnNoResponse()
     {
-        StartCoroutine(DialogManager.Instance.TypeDialog("Thank you so much!"));
+        StartCoroutine(DialogManager.Instance.TypeDialog("Then stop wasting my time"));
     }
 
     private void OnYesResponse()
@@ -34,7 +35,7 @@ public class TheaterKeeper : MonoBehaviour, Interactable
 
     }
     private void onFirst(){
-        if(i == Random.Range(2, 5) ){
+        if(i > Random.Range(2, 5) ){
             StartCoroutine(DialogManager.Instance.TypeDialog("I'm in not in the mood for this, come another time"));
             priceBox.SetActive(false);
         }else{
@@ -44,17 +45,18 @@ public class TheaterKeeper : MonoBehaviour, Interactable
         i++;
     }
     private void onSecond(){
-        if(i == Random.Range(2, 5)){
+        if(i > Random.Range(2, 5)){
             StartCoroutine(DialogManager.Instance.TypeDialog("I'm in not in the mood for this, come another time"));
             priceBox.SetActive(false);
         }
         else{
+        
             StartCoroutine(DialogManager.Instance.TypeDialog("I have a family to feed"));
         }
         i++;
     }
     private void onThird(){
-        if(i == Random.Range(2, 5)){
+        if(i > Random.Range(2, 5)){
             StartCoroutine(DialogManager.Instance.TypeDialog("I'm in not in the mood for this, come another time"));
             priceBox.SetActive(false);
         }else{

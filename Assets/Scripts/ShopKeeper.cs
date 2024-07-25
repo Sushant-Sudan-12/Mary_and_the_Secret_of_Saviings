@@ -22,12 +22,12 @@ public class ShopKeeper : MonoBehaviour, Interactable
     }
     private void OnYesResponse()
     {
-        StartCoroutine(DialogManager.Instance.TypeDialog("Here is your ticket for 200"));
+        StartCoroutine(DialogManager.Instance.TypeDialog("Here is your ticket for 200, enjoy your movie"));
     }
 
     private void OnNoResponse()
     {
-        StartCoroutine(DialogManager.Instance.TypeDialog("Thank you so much!"));
+        StartCoroutine(DialogManager.Instance.TypeDialog(""));
     }
     
     

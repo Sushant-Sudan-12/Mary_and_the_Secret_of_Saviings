@@ -20177,6 +20177,7 @@ MonoBehaviour:
   dialogBox: {fileID: 1205371441}
   optionBox: {fileID: 810727638}
   priceBox: {fileID: 1745085679}
+  theaterManager: {fileID: 0}
 --- !u!1 &760737741
 GameObject:
   m_ObjectHideFlags: 0
