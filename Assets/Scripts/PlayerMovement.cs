@@ -45,8 +45,8 @@ public class PlayerMovement : MonoBehaviour
         var interactPos = transform.position+facingDir;
         var collider = Physics2D.OverlapCircle(interactPos,0.2f,interactableLayer);
         if(collider == null){
-            DialogManager.Instance.dialogBox.SetActive(false);
-            ShopManager.Instance.optionBox.SetActive(false);
+            // DialogManager.Instance.dialogBox.SetActive(false);
+            // ShopManager.Instance.optionBox.SetActive(false);
         }
         
     }

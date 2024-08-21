@@ -37,6 +37,7 @@ public class DialogManager : MonoBehaviour
                 dialogBox.SetActive(false);
                 onHideDialog?.Invoke();
             }
+            
         }
 
     }

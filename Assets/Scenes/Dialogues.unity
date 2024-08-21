@@ -21391,6 +21391,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2612197962302419356, guid: 96f9284be5193a04bbe7124ad95c4d63, type: 3}
+      propertyPath: isMoving
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4005018199362875191, guid: 96f9284be5193a04bbe7124ad95c4d63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -21462,6 +21466,10 @@ PrefabInstance:
     - target: {fileID: 9037191903557376097, guid: 96f9284be5193a04bbe7124ad95c4d63, type: 3}
       propertyPath: m_Name
       value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037191903557376097, guid: 96f9284be5193a04bbe7124ad95c4d63, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5156146472510702672, guid: 96f9284be5193a04bbe7124ad95c4d63, type: 3}

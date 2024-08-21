@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
             }
         };
     }
-
+    
     private void Update(){
         if(state == GameState.FreeRoam){
             playerController.HandleUpdate();
@@ -25,12 +25,7 @@ public class GameController : MonoBehaviour
         else if(state == GameState.Dialog){
             DialogManager.Instance.HandleUpdate();
         }
-
     }
-
-
-
-
 }
 
 
